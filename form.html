@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script lang="JavaScript">
+        function task1() {
+            document.form4.t1.value = document.form4.s1.selectedIndex
+        }
+    </script>
+</head>
+
+<body style="background-color: aquamarine;text-align: center; align-items: center;">
+    <form action="" name="form1" method="">
+        <h3>Login</h3>
+        <label for="username">Username</label>
+        <input type="text" name="t1" id="username" style="margin-bottom: 8px;">
+        <br />
+        <label for="pw">Password </label>
+        <input type="text" name="t2" id="pw" style="margin-bottom: 8px;">
+        <br />
+        <input type="button" value="OK">
+        <input type="button" value="Reset">
+    </form>
+    <select name="s1" id="">
+        <option value="">Index 0</option>
+        <option value="">Index 1</option>
+        <option value="">Index 2</option>
+        <option value="">Index 3</option>
+    </select>
+    <input type="text-area" name="t1">
+    <input type="button" name="b1" value="OK" onclick="task1()"><br><br>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Quibusdam vel earum possimus nostrum aspernatur ex perferendis similique voluptates aliquid id est aut, inventore molestias, 
+        delectus quam veritatis distinctio quod quidem!
+    </textarea>
+</body>
+
+</html>
