@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js">
+        
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- # HTML + Javascript Exercise
+    ​
+    ### Knowledge round-up
+    ​
+    - *Javascript*
+    ​
+        - What are the differences between a variable that is: null, undefined?
+            + undefined: một biến đã được khai báo nhưng chưa được gán giá trị,
+            + null: là một giá trị dùng để gán
+            + null là một object, undefined là một type 
+
+        - What is use strict? what are the advantages and disadvantages to using it?
+            + use strict: xác định rằng mã JavaScript phải được thực thi ở strict mode
+            + Advantages: 
+                ++ ngăn chặn hoặc ném lỗi khi các hành động tương đối “unsafe” được thực hiện và đảm bảo an toàn của hoạt động mã
+                ++ Loại bỏ một số khía cạnh không hợp lý và không chính xác của cú pháp Javascript và giảm một số hành vi kỳ lạ
+                ++ Cải thiện hiệu quả của trình biên dịch và tăng tốc độ chạy
+            + Disadvantages: 
+                ++ use strict sẽ ngăn bạn thực hiện một số việc nhất định
+                ++ việc kết hợp các tập lệnh được viết ở use strict khác nhau có thể gây ra sự cố
+
+        - What are the differences between == and ===? Write an example for each case (if any)?
+            + === : so sánh cả typeof và value, return 1 nếu cả 2 cùng typeof và cùng value, ngược lại return 0
+            + == : chuyển đổi cả 2 về cùng 1 kiểu dữ liệu rồi so sánh, return 1 nếu cả 2 có cùng giá trị, ngược lại return 0
+            + Example:
+            -->
+            <h2>`===` and `==`</h2>
+            1 === "1" : 
+            <script>
+                compare1(1, "1")
+            </script>
+            <br>
+            1 == "1" :
+            <script>
+                compare2(1,"1")
+            </script>
+            <hr>
+
+            <!-- 
+        - Give a list of Falsy values in Javascript.
+            + undefined
+            + null
+            + NaN
+            + 0
+            + ""(empty string)
+            + false
+        - Give an example for each of the following methods in Javascript
+            + map 
+            -->
+            <h2>map()</h2>
+            array = [1, 2, 3, 4 ,5]
+            <br>
+            result after map() : 
+            <script>
+                array = [1, 2, 3, 4, 5]
+                demo_map(array)
+            </script> 
+            <hr>
+            <!-- 
+            + filter
+            -->
+            <h2>filter()</h2>
+            array = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
+            <br>
+            result after filter() : 
+            <script>
+                array = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
+                demo_filter(array)
+            </script> 
+            <hr>
+            <!--  
+            + reduce
+            -->
+            <h2>reduce()</h2>
+            array = [1, 2, 3, 4 ,5]
+            <br>
+            result after reduce() : 
+            <script>
+                array = [1, 2, 3, 4, 5]
+                demo_reduce(array)
+            </script> 
+            <hr>
+            <!--  
+            + find
+            -->
+            <h2>find()</h2>
+            array = [5, 12, 8, 130, 44]
+            <br>
+            result after find() : 
+            <script>
+                array = [5, 12, 8, 130, 44]
+                demo_find(array)
+            </script> 
+            <hr>
+            <!--  
+            + some
+            -->
+            <h2>some()</h2>
+            array = [5, 12, 8, 130, 44]
+            <br>
+            check element in array divisible by 5 : 
+            <script>
+                array = [5, 12, 8, 130, 44]
+                demo_some(array)
+            </script> 
+            <hr>
+            <!--  
+        - Give an example for add a new element to an array[] (at the end)
+            -->
+            <h2>Give an example for add a new element to an array[] (at the end)</h2>
+            array = [5, 12, 8, 130, 44]
+            <br>
+            result : 
+            <script>
+                array = [5, 12, 8, 130, 44]
+                add_element_to_array_at_the_end(array,10)
+            </script> 
+            <hr>            
+            <!--  
+        - Give an example for add a new element to an array[] (at the beginning)
+            -->
+            <h2>Give an example for add a new element to an array[] (at the beginning)</h2>
+            array = [5, 12, 8, 130, 44]
+            <br>
+            result : 
+            <script>
+                array = [5, 12, 8, 130, 44]
+                add_element_to_array_at_the_beginning(array,10)
+            </script> 
+            <hr> 
+            <!--  
+        - Give an example for removing an element in array[]
+            -->
+            <h2>Give an example for removing an element in array[]</h2>
+            array = [5, 12, 8, 130, 44] <br>
+            remove 8,130
+            <br>
+            result : 
+            <script>
+                array = [5, 12, 8, 130, 44]
+                rm_element_in_array(array,2,2)
+            </script> 
+            <hr> 
+            <!--  
+    ### Playground
+        1. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
+        
+        Input: a = 5, b = 10
+        Output: 15
+        ​
+        Input: a = 5, b = 5
+        Output: 30
+        -->
+        <h2>1. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h2>
+        Input: a = 5, b = 10 <br>
+        Result: <script>document.writeln(playGround1(5,10))</script><br>
+        Input: a = 5, b = 5 <br>        
+        Result: <script>document.writeln(playGround1(5,5))</script><hr>
+        <!--  
+        
+        ​
+        2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+        ​
+        
+        Input: a = 12
+        Output: 7
+        ​
+        Input: a = 19
+        Output: 0
+        ​
+        Input: a = 22
+        Output: 9
+        -->
+        <h2>2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</h2>
+        Input: a = 12<br>
+        Result: <script>document.writeln(playGround2(12))</script><br>
+        Input: a = 22 <br>        
+        Result: <script>document.writeln(playGround2(22))</script><hr>
+        <!-- 
+        
+        ​
+        3. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.
+        ​
+        
+        Input: a = '1*9'
+        Output: ['129', '159', '189']
+        
+        ​
+        
+        Input: a = '1234567890*'
+        Output: ['12345678900', 
+        '12345678903', 
+        '12345678906', 
+        '12345678909']
+        -->
+        <h2>3. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.</h2>
+        Input: a = '1*9'<br>
+        Result: <script>document.writeln(playGround3('1*9'))</script><br>
+        Input: a = '1234567890*'<br>        
+        Result: <script>document.writeln(playGround3('1234567890*'))</script><hr>
+        <!-- 
+        
+        ​
+        4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.
+        ​
+        
+        Input: a = '1*9'
+        Output: []
+        
+        ​
+        
+        Input: a = '1234567890*'
+        Output: ['12345678900', 
+        '12345678906']
+        -->
+        <h2>4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.</h2>
+        Input: a = '1*9'<br>
+        Result: <script>document.writeln(playGround4('1*9'))</script><br>
+        Input: a = '1234567890*'<br>        
+        Result: <script>document.writeln(playGround4('1234567890*'))</script><hr>
+        <!-- 
+        
+    ​ -->
+</body>
+
+</html>
