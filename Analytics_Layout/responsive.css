@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1201px) {
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .responsive-wide {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .responsive-wide {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive-wide {
+        max-width: 540px;
+    }
+} 
