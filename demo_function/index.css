@@ -1,0 +1,61 @@
+a::after {
+    content: attr(href);
+}
+
+input {
+    padding: 2px;
+    display: block;
+    width: calc(100% - 1em);
+}
+
+.formbox {
+    width: calc(100% / 6);
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.rgb {
+    background-color: rgb(78, 167, 86);
+    width: 30%;
+}
+
+.rgba {
+    background-color: rgba(78, 167, 86, 0.5);
+    width: 30%;
+}
+
+.normal {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+}
+
+.rotated {
+    transform: rotate(45deg);
+    /* Equal to rotateZ(45deg) */
+    background-color: pink;
+}
+
+.static {
+    width: 60px;
+    height: 60px;
+    background-color: skyblue;
+}
+
+.moved {
+    transform: translate(10px);
+    /* Equal to: translateX(10px) or translate(10px, 0) */
+    background-color: pink;
+}
+
+.scaled {
+    transform: scale(0.7);
+    /* Equal to scaleX(0.7) scaleY(0.7) */
+    background-color: pink;
+}
+
+.linear-gradient {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(blue, purple, yellow);
+}
