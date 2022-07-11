@@ -1,0 +1,50 @@
+ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+}
+.main div{
+    margin-bottom: 50px;
+}
+.list-user{
+    display: flex;
+    justify-content: center;
+}
+.list-user .list-user-item{
+    
+    margin: 0px 100px;
+}
+.list-user .list-user-item h3, .list-user .list-user-item p{
+    text-align: center;
+}
+.list-user .list-user-item img{
+    width: 250px;
+    height: auto;
+}
+.footer{
+    background-color: black;
+    height: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+.footer .list-footer{
+    display: flex;
+}
+.footer .list-footer .list-footer-item{
+    color: white;
+    margin-right: 22px;
+    margin-top: 14px;
+}
+.footer .list-footer .list-footer-item .amount{
+    padding: 8px 12px;
+    background-color: beige;
+    color: black;
+    border-radius: 50%;
+}
+.content{
+    background-color: azure;
+    margin-left: 15%;
+    padding: 10px;
+    margin-top: 50px;
+}
